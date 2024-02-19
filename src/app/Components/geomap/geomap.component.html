@@ -1,0 +1,18 @@
+<button class="btn btn-outline-success m-2">Geolocalizacion</button>
+<button class="btn btn-outline-warning">recargar</button>
+
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div id='map' class="col-7"></div>
+        <section class="col-5"> <div class="weather">
+            <h1>In this location:</h1>
+            <h2>teperature is :{{ weather?.current?.temp_c }}º <img src="{{weather?.current?.condition?.icon}}" alt=""></h2>
+            <h3>condition is :{{ weather?.current?.condition?.text }} </h3>
+          </div> </section>     
+    </div>
+ 
+</div>
+
+
