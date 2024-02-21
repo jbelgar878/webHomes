@@ -10,7 +10,9 @@
     "wifi": true,
     "laundry": true,
     "latitude": 41.8781136,
-    "longitude": -87.6297982
+    "longitude": -87.6297982,
+    "satisfaction":9,
+    "countOvVote":7
     },
     {
     "id": 1,
@@ -22,7 +24,9 @@
     "wifi": false,
     "laundry": true,
     "latitude": 41.8781136,
-    "longitude": -87.6297982
+    "longitude": -87.6297982,
+    "satisfaction":4,
+    "countOvVote":4
     },
     {
     "id": 2,
@@ -34,7 +38,9 @@
     "wifi": false,
     "laundry": false,
     "latitude": 41.8781136,
-    "longitude": -87.6297982
+    "longitude": -87.6297982,
+    "satisfaction":45,
+    "countOvVote":5
     },
     {
     "id": 3,
@@ -46,7 +52,9 @@
     "wifi": true,
     "laundry": false,
     "latitude": 41.8781136,
-    "longitude": -87.6297982
+    "longitude": -87.6297982,
+    "satisfaction":4,
+    "countOvVote":7
     },
     {
     "id": 4,
@@ -58,7 +66,9 @@
     "wifi": true,
     "laundry": false,
     "latitude": 41.8781136,
-    "longitude": -87.6297982
+    "longitude": -87.6297982,
+    "satisfaction":4,
+    "countOvVote":9
     },
     {
     "id": 5,
@@ -70,7 +80,9 @@
     "wifi": true,
     "laundry": true,
     "latitude": 41.8781136,
-    "longitude": -87.6297982
+    "longitude": -87.6297982,
+    "satisfaction":4,
+    "countOvVote":1
     },
     {
     "id": 6,
@@ -82,7 +94,9 @@
     "wifi": true,
     "laundry": true,
     "latitude": 41.8781136,
-    "longitude": -87.6297982
+    "longitude": -87.6297982,
+    "satisfaction":5,
+    "countOvVote":5
     },
     {
     "id": 7,
@@ -94,7 +108,9 @@
     "wifi": true,
     "laundry": true,
     "latitude": 41.8781136,
-    "longitude": -87.6297982
+    "longitude": -87.6297982,
+    "satisfaction":20,
+    "countOvVote":7
     },
     {
     "id": 8,
@@ -106,7 +122,9 @@
     "wifi": false,
     "laundry": false,
     "latitude": 41.8781136,
-    "longitude": -87.6297982
+    "longitude": -87.6297982,
+    "satisfaction":4,
+    "countOvVote":1
     },
     {
     "id": 9,
@@ -118,7 +136,9 @@
     "wifi": true,
     "laundry": true,
     "latitude": 41.8781136,
-    "longitude": -87.6297982
+    "longitude": -87.6297982,
+    "satisfaction":4,
+    "countOvVote":2
     }
     ]
     }

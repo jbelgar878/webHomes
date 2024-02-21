@@ -30,8 +30,21 @@ import { WeatherComponent } from "../weather/weather.component";
         <li>Units available: {{housingLocation?.availableUnits}}</li>
         <li>Does this location have wifi: {{housingLocation?.wifi}}</li>
         <li>Does this location have laundry: {{housingLocation?.laundry}}</li>
+        <li>rate:</li>
+        @if((this.valoracion! / this.votos!)<3 ){
+          <i class="fa-solid fa-star"></i>
+        }@else if ((this.valoracion! / this.votos!)>=3 && (this.valoracion! / this.votos!)<=7) {
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        } @else {
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        }
       </ul>
       
+
+      <li> <label for="file">your rate:</label> <input type="number" ngModel required> <input type="button" value="rate" (click)="addRate()">  </li>
     </section>
 
     <section>
@@ -71,9 +84,14 @@ import { WeatherComponent } from "../weather/weather.component";
 
 export class DetailsComponent {
 
+
   route: ActivatedRoute = inject(ActivatedRoute);
   housingService = inject(HousingService);
   housingLocation: HousingLocation | undefined;
+  valoracion?:number ;
+  votos?:number ;
+  media?:number ;
+
   
 
   applyForm = new FormGroup({
@@ -86,6 +104,11 @@ export class DetailsComponent {
     const housingLocationId = parseInt(this.route.snapshot.params['id'], 10);
     this.housingService.getHousingLocationById(housingLocationId).then(housingLocation => {
       this.housingLocation = housingLocation;
+      this.valoracion = this.housingLocation?.satisfaction;
+      this.votos = this.housingLocation?.countOvVote;
+      
+
+      
     });
 
     this.applyForm = this.fb.group({
@@ -116,4 +139,9 @@ export class DetailsComponent {
     devolverCasa() {
       return this.housingLocation;
     }
+
+
+    addRate() {
+
+      }
 }

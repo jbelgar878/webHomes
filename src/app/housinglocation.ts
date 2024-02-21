@@ -10,4 +10,6 @@ export interface HousingLocation {
     laundry: boolean;
     latitude: number;
     longitude: number;
+    satisfaction: number,
+    countOvVote: number,
   }
